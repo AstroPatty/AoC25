@@ -53,7 +53,7 @@ defmodule Aoc05.Ranges do
 
   def insert_range(range, [head | tail]) do
     case combine_ranges(range, head) do
-      [_, h] -> [h | insert_range(range, tail)]
+      [_, _] -> [head | insert_range(range, tail)]
       [new_range] -> insert_range(new_range, tail)
     end
   end
