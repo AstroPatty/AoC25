@@ -17,3 +17,6 @@ erl_crash.dump
 .tool-versions
 **/test
 **/.formatter.exs
+aoc_*/README.md
+aoc_*/.gitignore
+
